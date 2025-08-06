@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+    <title>Седона. Город в Аризоне</title>
   </head>
   <body class="page">
     <header class="header page__header">
@@ -12,13 +12,13 @@
         </a>
         <ul class="navigation__pages">
           <li class="navigation__pages-item">
-            <a class="navigation__pages-link" href="/index.html">Главная</a>
+            <a class="navigation__pages-link navigation__pages-link--current">Главная</a>
           </li>
           <li class="navigation__pages-item">
             <a class="navigation__pages-link" href="#">О Седоне</a>
           </li>
           <li class="navigation__pages-item">
-            <a class="navigation__pages-link navigation__pages-link--current">Гостиницы</a>
+            <a class="navigation__pages-link" href="/catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation__user">
@@ -33,10 +33,8 @@
               <span class="navigation__favorites-count">12</span>
             </a>
           </li>
-          <li class="navigation__user-item">
-            <a class="button navigation__user-link navigation__user-link--button" href="#">Хочу сюда!</a>
-          </li>
         </ul>
+        <a class="button navigation__user-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="catalog page__catalog">
@@ -73,14 +71,13 @@
             <label class="search-form__label" for="search-form-motel">Мотель</label>
             <input class="search-form__radio" id="search-form-apartment" type="radio" name="housing-type" value="apartment">
             <label class="search-form__label" for="search-form-apartment">Апартаменты</label>
-
           </fieldset>
           <fieldset class="search-form__price">
             <legend class="search-form__fieldset-price">Стоимость, ₽:</legend>
-            <input class="search-form__price-input" id="search-form-min-price" type="number" name="housing-price" value="0" min="0" max="9000">
+            <input class="search-form__price-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000">
             <label class="search-form__price-label" for="search-form-min-price">от</label>
-            <input class="search-form__price-input" id="search-form-max-price" type="number" name="housing-price" value="9000" min="0" max="9000">
-            <label class="search-form__price-label" for="search-form-max-price">от</label>
+            <input class="search-form__price-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000">
+            <label class="search-form__price-label" for="search-form-max-price">до</label>
           </fieldset>
           <fieldset class="search-form__buttons">
             <input class="button search-form__button button-blue" type="submit" value="Применить">
@@ -202,15 +199,16 @@
     </main>
     <footer class="footer page__footer">
       <section class="subscription footer__subscription subscription--background">
-        <h2 class="title subscription__title title--big title--white">
+        <h2 class="subscription__title subscription__title--white">
           Подпишитесь на рассылку
         </h2>
-        <p class="subtitle subscription__subtitle subtitle--big subtitle--white">
+        <p class="subscription__subtitle subscription__subtitle--white">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="subscription__email" type="email" name="email" placeholder="Ваш e-mail">
-          <input class="subscription__submit-email" type="submit" value="Подписаться">
+          <label class="visually-hidden" for="subscription-form-email">Ваша электронная почта</label>
+          <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button subscription__submit-email button--big" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="contacts footer__contacts">
