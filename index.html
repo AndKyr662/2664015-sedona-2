@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Город в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
+    <div class="page__wrapper">
     <header class="header page__header">
       <nav class="navigation header__navigation">
         <a class="navigation__logo" href="#">
-          <img class="navigation__logo-image" src="/images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
+          <img class="navigation__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
         <ul class="navigation__pages">
           <li class="navigation__pages-item">
@@ -40,7 +42,7 @@
     <main class="main page__main">
       <h1 class="visually-hidden">Сайт Седоны</h1>
       <div class="hero main__hero">
-        <img class="hero__image" src="/images/img_welcome.png" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой">
+        <img class="hero__image" src="images/img_welcome.png" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой">
       </div>
       <section class="features main__features">
         <h2 class="visually-hidden">
@@ -60,7 +62,7 @@
             <p class="feature__subtitle feature__subtitle--white">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="feature__img" src="/images/img_true_city.jpg" width="800" height="385" alt="Фотография города">
+            <img class="feature__img" src="images/img_true_city.jpg" width="800" height="385" alt="Фотография города">
           </li>
           <li class="feature features__item">
             <h3 class="feature__title">
@@ -70,7 +72,7 @@
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="feature features__item features__item--gray">
+          <li class="feature features__item feature--gray">
             <h3 class="feature__title">
               Красивая дорога
             </h3>
@@ -93,12 +95,12 @@
             <p class="feature__subtitle feature__subtitle--white">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="feature__img" src="/images/img_devil's_bridge.jpg" width="800" height="385" alt="Мост дьявола">
+            <img class="feature__img" src="images/img_devil's_bridge.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
       <section class="services main__services">
-        <h2>Сервис в Седоне</h2>
+        <h2 class="visually-hidden">Сервис в Седоне</h2>
         <p class="services__title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </p>
@@ -173,7 +175,7 @@
           </li>
         </ul>
         <address class="contacts__phone">
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts__phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="contacts__developer" href="https://htmlacademy.ru/" aria-label="HTML Academy">
           <svg class="contacts__developer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,5 +184,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>

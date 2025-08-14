@@ -3,22 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>Седона. Город в Аризоне</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
+    <div class="page__wrapper">
     <header class="header page__header">
       <nav class="navigation header__navigation">
-        <a class="navigation__logo" href="#">
-          <img class="navigation__logo-image" src="/images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
+        <a class="navigation__logo" href="/index.html">
+          <img class="navigation__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
         <ul class="navigation__pages">
           <li class="navigation__pages-item">
-            <a class="navigation__pages-link navigation__pages-link--current">Главная</a>
+            <a class="navigation__pages-link " href="/index.html">Главная</a>
           </li>
           <li class="navigation__pages-item">
             <a class="navigation__pages-link" href="#">О Седоне</a>
           </li>
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link" href="/catalog.html">Гостиницы</a>
+          <li class="navigation__pages-item navigation__pages-link--current">
+            <a class="navigation__pages-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation__user">
@@ -38,7 +40,7 @@
       </nav>
     </header>
     <main class="catalog page__catalog">
-      <div>
+      <div class="catalog__wrapper">
         <h1 class="catalog__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs catalog__breadcrumbs">
           <li class="breadcrumbs__item">
@@ -54,7 +56,7 @@
         </ul>
         <form class="search-form catalog__search-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-          <fieldset class="search-form__comfort">
+          <fieldset class="search-form__comfort search-form__fieldset">
             <legend class="search-form__fieldset-title">Инфраструктура:</legend>
             <input class="search-form__checkbox" id="search-form-pool" type="checkbox" name="pool" checked>
             <label class="search-form__label" for="search-form-pool">Бассейн</label>
@@ -63,7 +65,7 @@
             <input class="search-form__checkbox" id="search-form-wifi" type="checkbox" name="wifi">
             <label class="search-form__label" for="search-form-wifi">Wi-Fi</label>
           </fieldset>
-          <fieldset class="search-form__type">
+          <fieldset class="search-form__type search-form__fieldset">
             <legend class="search-form__fieldset-title">Тип жилья:</legend>
             <input class="search-form__radio" id="search-form-hotel" type="radio" name="housing-type" value="hotel" checked>
             <label class="search-form__label" for="search-form-hotel">Гостиница</label>
@@ -72,15 +74,15 @@
             <input class="search-form__radio" id="search-form-apartment" type="radio" name="housing-type" value="apartment">
             <label class="search-form__label" for="search-form-apartment">Апартаменты</label>
           </fieldset>
-          <fieldset class="search-form__price">
-            <legend class="search-form__fieldset-price">Стоимость, ₽:</legend>
+          <fieldset class="search-form__price search-form__fieldset">
+            <legend class="search-form__fieldset-title">Стоимость, ₽:</legend>
             <input class="search-form__price-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000">
             <label class="search-form__price-label" for="search-form-min-price">от</label>
             <input class="search-form__price-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000">
             <label class="search-form__price-label" for="search-form-max-price">до</label>
           </fieldset>
-          <fieldset class="search-form__buttons">
-            <input class="button search-form__button button-blue" type="submit" value="Применить">
+          <fieldset class="search-form__buttons search-form__fieldset">
+            <input class="button search-form__button button--blue" type="submit" value="Применить">
             <input class="button search-form__button button--transparent" type="reset" value="Сбросить">
           </fieldset>
         </form>
@@ -101,17 +103,17 @@
           </select>
           <ul class="search-result__layout-list">
             <li class="search-result__layout-item">
-              <a href="catalog.html?view=tile">
+              <a class="search-result__layout-link" href="catalog.html?view=tile">
                 <span class="visually-hidden">Представить в виде сетки</span>
               </a>
             </li>
             <li class="search-result__layout-item">
-              <a href="catalog.html?view=card">
+              <a class="search-result__layout-link" href="catalog.html?view=card">
                 <span class="visually-hidden">Представить в виде карточки</span>
               </a>
             </li>
             <li class="search-result__layout-item">
-              <a href="catalog.html?view=list">
+              <a class="search-result__layout-link" href="catalog.html?view=list">
                 <span class="visually-hidden">Представить в виде списка</span>
               </a>
             </li>
@@ -120,7 +122,7 @@
         <ul class="hotels search-result__hotels-list">
           <li class="hotel-card hotels__item">
             <h3 class="hotel-card__title">Amara Resort & Spa</h3>
-            <img class="hotel-card__picture" src="/images/img_hotel_1.jpg" width="300" height="212" alt="Вид из гостиницы">
+            <img class="hotel-card__picture" src="images/img_hotel_1.jpg" width="300" height="212" alt="Вид из гостиницы">
             <p class="hotel-card__type">Гостиница</p>
             <p class="hotel-card__price">От 4000 ₽</p>
             <a class="button hotel-card__more" href="#">Подробнее</a>
@@ -134,7 +136,7 @@
           </li>
           <li class="hotel-card hotels__item">
             <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
-            <img class="hotel-card__picture" src="/images/img_hotel_2.jpg" width="300" height="212" alt="Вид из гостиницы">
+            <img class="hotel-card__picture" src="images/img_hotel_2.jpg" width="300" height="212" alt="Вид из гостиницы">
             <p class="hotel-card__type">Гостиница</p>
             <p class="hotel-card__price">От 5000 ₽</p>
             <a class="button hotel-card__more" href="#">Подробнее</a>
@@ -148,7 +150,7 @@
           </li>
           <li class="hotel-card hotels__item">
             <h3 class="hotel-card__title">Desert Quail Inn</h3>
-            <img class="hotel-card__picture" src="/images/img_hotel_3.jpg" width="300" height="212" alt="Вид из гостиницы">
+            <img class="hotel-card__picture" src="images/img_hotel_3.jpg" width="300" height="212" alt="Вид из гостиницы">
             <p class="hotel-card__type">Гостиница</p>
             <p class="hotel-card__price">От 2500 ₽</p>
             <a class="button hotel-card__more" href="#">Подробнее</a>
@@ -162,7 +164,7 @@
           </li>
           <li class="hotel-card hotels__item">
             <h3 class="hotel-card__title">GreenTree Inn</h3>
-            <img class="hotel-card__picture" src="/images/img_hotel_4.jpg" width="300" height="212" alt="Вид из гостиницы">
+            <img class="hotel-card__picture" src="images/img_hotel_4.jpg" width="300" height="212" alt="Вид из гостиницы">
             <p class="hotel-card__type">Гостиница</p>
             <p class="hotel-card__price">От 1500 ₽</p>
             <a class="button hotel-card__more" href="#">Подробнее</a>
@@ -198,11 +200,11 @@
       </div>
     </main>
     <footer class="footer page__footer">
-      <section class="subscription footer__subscription subscription--background">
-        <h2 class="subscription__title subscription__title--white">
+      <section class="subscription footer__subscription">
+        <h2 class="subscription__title">
           Подпишитесь на рассылку
         </h2>
-        <p class="subscription__subtitle subscription__subtitle--white">
+        <p class="subscription__subtitle">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -231,7 +233,7 @@
           </li>
         </ul>
         <address class="contacts__phone">
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="contacts__phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <a class="contacts__developer" href="https://htmlacademy.ru/" aria-label="HTML Academy">
           <svg class="contacts__developer-logo" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,5 +242,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>

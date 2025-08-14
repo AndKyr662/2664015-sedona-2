@@ -1,0 +1,399 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.page__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  min-width: 160x;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  background-color: #756157;
+  cursor: pointer;
+}
+
+.button--big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button--blue {
+  background-color: #82B3D3;
+}
+
+.button--green {
+  background-color: #7DB54F;
+}
+
+.button--transparent {
+  background-color: transparent;
+}
+
+.navigation {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navigation__pages {
+  list-style: none;
+}
+
+.navigation__pages-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation__user {
+  list-style: none;
+}
+
+.navigation__user-link {
+  text-decoration: none;
+}
+
+.navigation__favorites-count {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+}
+
+.hero {
+  background-image: url(../images/img_welcome_background.jpg);
+  background-color: #82B3D3;
+}
+
+.hero__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature--with-image {
+  background-color: #82B3D3;
+}
+
+.feature--gray {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.features__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.features__subtitle {
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+}
+
+.feature__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.feature__title--white {
+  color: #ffffff;
+}
+
+.feature__subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.feature__subtitle--white {
+  color: #ffffff;
+}
+
+.services__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services__subtitle {
+  text-align: center;
+}
+
+.services__list {
+  list-style: none;
+}
+
+.services__item--gray {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.service__subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.search-hotel__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-hotel__subtitle {
+  text-align: center;
+}
+
+.subscription--background {
+  background-image: url(../images/img_subscribe_background.jpg);
+  background-color: #82B3D3;
+}
+
+.subscription__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.subscription__title--white {
+  color: #ffffff;
+}
+
+.subscription__subtitle {
+  text-align: center;
+}
+
+.subscription__subtitle--white {
+  color: #ffffff;
+}
+
+.subscription__email::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  opacity: 60%;
+}
+
+.contacts__socials {
+  list-style: none;
+}
+
+.contacts__phone-link {
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 40px;
+  color: #000000;
+}
+
+.catalog__wrapper {
+  background-image: url(../images/img_filter_background.jpg);
+  background-color: #82B3D3;
+}
+
+.catalog__title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  list-style: none;
+}
+
+.search-form {
+  color: #ffffff;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.search-form__label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.search-form__price-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.search-form__price-label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 30%;
+}
+
+.search-result__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-result__sorting-type {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333
+}
+
+.search-result__layout-list {
+  list-style: none;
+}
+
+.search-result__layout-link {
+  text-decoration: none;
+}
+
+.hotels {
+  list-style: none;
+}
+
+.hotel-card__title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.hotel-card__type {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card__price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card__rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+
+.search-result__pagination {
+  list-style: none;
+}
+
+.search-result__pagination-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.search-result__pagination-item--current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.search-result__pagination-item--dots {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.search-result__page-link {
+  color: inherit;
+  text-decoration: none;
+}
