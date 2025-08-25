@@ -6,107 +6,124 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
-    <div class="page__wrapper">
     <header class="header page__header">
       <nav class="navigation header__navigation">
         <a class="navigation__logo" href="#">
           <img class="navigation__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
-        <ul class="navigation__pages">
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link navigation__pages-link--current">Главная</a>
-          </li>
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link" href="/catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation__user">
-          <li class="navigation__user-item">
-            <a class="navigation__user-link navigation__user-link--search" href="#">
-              <span class="visually-hidden">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="navigation__user-item">
-            <a class="navigation__user-link navigation__user-link--favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="navigation__favorites-count">12</span>
-            </a>
-          </li>
-        </ul>
-        <a class="button navigation__user-button" href="#">Хочу сюда!</a>
+          <div class="navigation__wrapper">
+            <ul class="navigation__pages">
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link navigation__pages-link--current">Главная</a>
+              </li>
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link" href="catalog.html">Гостиницы</a>
+              </li>
+            </ul>
+          <div class="navigation__user-wrapper">
+            <ul class="navigation__user">
+              <li class="navigation__user-item">
+                <a class="navigation__user-link navigation__user-link--search" href="#">
+                  <span class="visually-hidden">Поиск по сайту</span>
+                </a>
+              </li>
+              <li class="navigation__user-item">
+                <a class="navigation__user-link navigation__user-link--favorites" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="navigation__favorites-count">12</span>
+                </a>
+              </li>
+            </ul>
+            <a class="button navigation__user-button" href="#">Хочу сюда!</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="main page__main">
       <h1 class="visually-hidden">Сайт Седоны</h1>
       <div class="hero main__hero">
-        <img class="hero__image" src="images/img_welcome.png" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой">
+        <img class="hero__image" src="images/img_welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой">
       </div>
       <section class="features main__features">
         <h2 class="visually-hidden">
           Особенности города
         </h2>
-        <p class="features__title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </p>
-        <p class="features__subtitle">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
-        </p>
+        <div class="features__title-wrapper">
+          <p class="section-title features__title">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </p>
+          <p class="features__subtitle">
+            Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          </p>
+        </div>
         <ul class="features__list">
           <li class="feature features__item feature--with-image">
-            <h3 class="feature__title feature__title--white">
-              Настоящий городок
-            </h3>
-            <p class="feature__subtitle feature__subtitle--white">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+            <div class="feature__text-wrapper">
+              <h3 class="feature__title feature__title--white">
+                Настоящий городок
+              </h3>
+              <p class="feature__subtitle feature__subtitle--white">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+            </div>
             <img class="feature__img" src="images/img_true_city.jpg" width="800" height="385" alt="Фотография города">
           </li>
           <li class="feature features__item">
-            <h3 class="feature__title">
-              Небольшая площадь
-            </h3>
-            <p class="feature__subtitle">
-              Все достопримечательности находятся очень близко
-            </p>
+            <div class="feature__wrapper">
+              <h3 class="feature__title">
+                Небольшая площадь
+              </h3>
+              <p class="feature__subtitle">
+                Все достопримечательности находятся очень близко
+              </p>
+            </div>
           </li>
           <li class="feature features__item feature--gray">
-            <h3 class="feature__title">
-              Красивая дорога
-            </h3>
-            <p class="feature__subtitle">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
+            <div class="feature__wrapper">
+              <h3 class="feature__title">
+                Красивая дорога
+              </h3>
+              <p class="feature__subtitle">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </div>
           </li>
           <li class="feature features__item">
-            <h3 class="feature__title">
-              Мало туристов
-            </h3>
-            <p class="feature__subtitle">
-              Большинство едет в Гранд Каньон и толпится там
-            </p>
+            <div class="feature__wrapper">
+              <h3 class="feature__title">
+                Мало туристов
+              </h3>
+              <p class="feature__subtitle">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </div>
           </li>
-          <li class="feature features__item feature--with-image">
-            <h3 class="feature__title feature__title--white">
-              Там есть мост дьявола
-            </h3>
-            <p class="feature__subtitle feature__subtitle--white">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+          <li class="feature features__item feature--with-image feature--reverse">
+            <div class="feature__text-wrapper">
+              <h3 class="feature__title feature__title--white">
+                Там есть мост дьявола
+              </h3>
+              <p class="feature__subtitle feature__subtitle--white">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
             <img class="feature__img" src="images/img_devil's_bridge.jpg" width="800" height="385" alt="Мост дьявола">
           </li>
         </ul>
       </section>
       <section class="services main__services">
         <h2 class="visually-hidden">Сервис в Седоне</h2>
-        <p class="services__title">
-          Приезжайте в Седону отдохнуть в комфорте и уюте!
-        </p>
-        <p class="services__subtitle">
-          Опытный персонал и качественное обслуживание!
-        </p>
+        <div class="services__title-wrapper">
+          <p class="section-title services__title">
+            Приезжайте в Седону отдохнуть в комфорте и уюте!
+          </p>
+          <p class="services__subtitle">
+            Опытный персонал и качественное обслуживание!
+          </p>
+        </div>
         <ul class="services__list">
           <li class="service services__item services__item--gray">
             <h3 class="service__title">Жильё</h3>
@@ -132,18 +149,18 @@
         <h2 class="visually-hidden">
           Найти гостиницу
         </h2>
-        <p class="search-hotel__title">
+        <p class="section-title search-hotel__title">
           Заинтересовались?
         </p>
         <p class="search-hotel__subtitle">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button search-hotel__link button--big" type="button">Поиск гостиницы в Седоне</button>
       </section>
     </main>
     <footer class="footer page__footer">
       <section class="subscription footer__subscription subscription--background">
-        <h2 class="subscription__title subscription__title--white">
+        <h2 class="section-title subscription__title section-title--white">
           Подпишитесь на рассылку
         </h2>
         <p class="subscription__subtitle subscription__subtitle--white">
@@ -152,7 +169,7 @@
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-form-email">Ваша электронная почта</label>
           <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="button subscription__submit-email button--big" type="submit">Подписаться</button>
+          <button class="button subscription__submit-email button--big button--blue" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="contacts footer__contacts">
@@ -184,6 +201,5 @@
         </a>
       </section>
     </footer>
-    </div>
   </body>
 </html>

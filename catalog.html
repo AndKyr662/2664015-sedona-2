@@ -6,37 +6,40 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page">
-    <div class="page__wrapper">
     <header class="header page__header">
       <nav class="navigation header__navigation">
-        <a class="navigation__logo" href="/index.html">
+        <a class="navigation__logo" href="#">
           <img class="navigation__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
-        <ul class="navigation__pages">
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link " href="/index.html">Главная</a>
-          </li>
-          <li class="navigation__pages-item">
-            <a class="navigation__pages-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation__pages-item navigation__pages-link--current">
-            <a class="navigation__pages-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="navigation__user">
-          <li class="navigation__user-item">
-            <a class="navigation__user-link navigation__user-link--search" href="#">
-              <span class="visually-hidden">Поиск по сайту</span>
-            </a>
-          </li>
-          <li class="navigation__user-item">
-            <a class="navigation__user-link navigation__user-link--favorites" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="navigation__favorites-count">12</span>
-            </a>
-          </li>
-        </ul>
-        <a class="button navigation__user-button" href="#">Хочу сюда!</a>
+          <div class="navigation__wrapper">
+            <ul class="navigation__pages">
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link" href="#">О Седоне</a>
+              </li>
+              <li class="navigation__pages-item">
+                <a class="navigation__pages-link navigation__pages-link--current">Гостиницы</a>
+              </li>
+            </ul>
+          <div class="navigation__user-wrapper">
+            <ul class="navigation__user">
+              <li class="navigation__user-item">
+                <a class="navigation__user-link navigation__user-link--search" href="#">
+                  <span class="visually-hidden">Поиск по сайту</span>
+                </a>
+              </li>
+              <li class="navigation__user-item">
+                <a class="navigation__user-link navigation__user-link--favorites" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="navigation__favorites-count">12</span>
+                </a>
+              </li>
+            </ul>
+            <a class="button navigation__user-button" href="#">Хочу сюда!</a>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="catalog page__catalog">
@@ -56,35 +59,55 @@
         </ul>
         <form class="search-form catalog__search-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-          <fieldset class="search-form__comfort search-form__fieldset">
-            <legend class="search-form__fieldset-title">Инфраструктура:</legend>
-            <input class="search-form__checkbox" id="search-form-pool" type="checkbox" name="pool" checked>
-            <label class="search-form__label" for="search-form-pool">Бассейн</label>
-            <input class="search-form__checkbox" id="search-form-parking" type="checkbox" name="parking" checked>
-            <label class="search-form__label" for="search-form-parking">Парковка</label>
-            <input class="search-form__checkbox" id="search-form-wifi" type="checkbox" name="wifi">
-            <label class="search-form__label" for="search-form-wifi">Wi-Fi</label>
-          </fieldset>
-          <fieldset class="search-form__type search-form__fieldset">
-            <legend class="search-form__fieldset-title">Тип жилья:</legend>
-            <input class="search-form__radio" id="search-form-hotel" type="radio" name="housing-type" value="hotel" checked>
-            <label class="search-form__label" for="search-form-hotel">Гостиница</label>
-            <input class="search-form__radio" id="search-form-motel" type="radio" name="housing-type" value="motel">
-            <label class="search-form__label" for="search-form-motel">Мотель</label>
-            <input class="search-form__radio" id="search-form-apartment" type="radio" name="housing-type" value="apartment">
-            <label class="search-form__label" for="search-form-apartment">Апартаменты</label>
-          </fieldset>
-          <fieldset class="search-form__price search-form__fieldset">
-            <legend class="search-form__fieldset-title">Стоимость, ₽:</legend>
-            <input class="search-form__price-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000">
-            <label class="search-form__price-label" for="search-form-min-price">от</label>
-            <input class="search-form__price-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000">
-            <label class="search-form__price-label" for="search-form-max-price">до</label>
-          </fieldset>
-          <fieldset class="search-form__buttons search-form__fieldset">
-            <input class="button search-form__button button--blue" type="submit" value="Применить">
-            <input class="button search-form__button button--transparent" type="reset" value="Сбросить">
-          </fieldset>
+          <div class="search-form__fieldsets-wrapper">
+            <fieldset class="search-form__comfort search-form__fieldset">
+              <legend class="search-form__fieldset-title">Инфраструктура:</legend>
+              <label class="search-form__label" for="search-form-pool">
+                <input class="search-form__checkbox" id="search-form-pool" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+              <label class="search-form__label" for="search-form-parking">
+                <input class="search-form__checkbox" id="search-form-parking" type="checkbox" name="parking" checked>
+                Парковка
+              </label>
+              <label class="search-form__label" for="search-form-wifi">
+                <input class="search-form__checkbox" id="search-form-wifi" type="checkbox" name="wifi">
+                Wi-Fi
+              </label>
+            </fieldset>
+            <fieldset class="search-form__type search-form__fieldset">
+              <legend class="search-form__fieldset-title">Тип жилья:</legend>
+              <label class="search-form__label" for="search-form-hotel">
+                <input class="search-form__radio" id="search-form-hotel" type="radio" name="housing-type" value="hotel" checked>
+                Гостиница
+              </label>
+              <label class="search-form__label" for="search-form-motel">
+                <input class="search-form__radio" id="search-form-motel" type="radio" name="housing-type" value="motel">
+                Мотель
+              </label>
+              <label class="search-form__label" for="search-form-apartment">
+                <input class="search-form__radio" id="search-form-apartment" type="radio" name="housing-type" value="apartment">
+                Апартаменты
+              </label>
+            </fieldset>
+          </div>
+          <div class="search-form__fieldsets-wrapper">
+            <fieldset class="search-form__price search-form__fieldset">
+              <legend class="search-form__fieldset-title">Стоимость, ₽:</legend>
+              <label class="search-form__price-label" for="search-form-min-price">
+                <input class="search-form__price-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000">
+                от
+              </label>
+              <label class="search-form__price-label" for="search-form-max-price">
+                <input class="search-form__price-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000">
+                до
+              </label>
+            </fieldset>
+            <fieldset class="search-form__buttons search-form__fieldset">
+              <input class="button search-form__button button--blue" type="submit" value="Применить">
+              <input class="button search-form__button button--transparent" type="reset" value="Сбросить">
+            </fieldset>
+          </div>
         </form>
       </div>
       <div class="search-result catalog__search-result">
@@ -96,28 +119,30 @@
               38
             </span>
           </p>
-          <select class="search-result__sorting-type" name="sorting-search-result" aria-label="Сортировка результатов">
-            <option class="search-result__sorting-item" value="inexpensive">Сначала дешевые</option>
-            <option class="search-result__sorting-item" value="expensive">Сначала дорогие</option>
-            <option class="search-result__sorting-item" value="popular">Сначала популярные</option>
-          </select>
-          <ul class="search-result__layout-list">
-            <li class="search-result__layout-item">
-              <a class="search-result__layout-link" href="catalog.html?view=tile">
-                <span class="visually-hidden">Представить в виде сетки</span>
-              </a>
-            </li>
-            <li class="search-result__layout-item">
-              <a class="search-result__layout-link" href="catalog.html?view=card">
-                <span class="visually-hidden">Представить в виде карточки</span>
-              </a>
-            </li>
-            <li class="search-result__layout-item">
-              <a class="search-result__layout-link" href="catalog.html?view=list">
-                <span class="visually-hidden">Представить в виде списка</span>
-              </a>
-            </li>
-          </ul>
+          <div class="search-result__sorting-wrapper">
+            <select class="search-result__sorting-type" name="sorting-search-result" aria-label="Сортировка результатов">
+              <option class="search-result__sorting-item" value="inexpensive">Сначала дешевые</option>
+              <option class="search-result__sorting-item" value="expensive">Сначала дорогие</option>
+              <option class="search-result__sorting-item" value="popular">Сначала популярные</option>
+            </select>
+            <ul class="search-result__layout-list">
+              <li class="search-result__layout-item search-result__layout-item--current">
+                <a class="search-result__layout-link" href="catalog.html?view=tile">
+                  <span class="visually-hidden">Представить в виде сетки</span>
+                </a>
+              </li>
+              <li class="search-result__layout-item">
+                <a class="search-result__layout-link" href="catalog.html?view=card">
+                  <span class="visually-hidden">Представить в виде карточки</span>
+                </a>
+              </li>
+              <li class="search-result__layout-item">
+                <a class="search-result__layout-link" href="catalog.html?view=list">
+                  <span class="visually-hidden">Представить в виде списка</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="hotels search-result__hotels-list">
           <li class="hotel-card hotels__item">
@@ -210,7 +235,7 @@
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-form-email">Ваша электронная почта</label>
           <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail">
-          <button class="button subscription__submit-email button--big" type="submit">Подписаться</button>
+          <button class="button subscription__submit-email button--big button--blue" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="contacts footer__contacts">
@@ -242,6 +267,5 @@
         </a>
       </section>
     </footer>
-    </div>
   </body>
 </html>
