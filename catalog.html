@@ -5,10 +5,11 @@
     <title>Седона. Город в Аризоне</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body class="page">
+  <body>
+    <div class="page">
     <header class="header page__header">
       <nav class="navigation header__navigation">
-        <a class="navigation__logo" href="#">
+        <a class="navigation__logo" href="index.html">
           <img class="navigation__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
         </a>
           <div class="navigation__wrapper">
@@ -119,30 +120,28 @@
               38
             </span>
           </p>
-          <div class="search-result__sorting-wrapper">
-            <select class="search-result__sorting-type" name="sorting-search-result" aria-label="Сортировка результатов">
-              <option class="search-result__sorting-item" value="inexpensive">Сначала дешевые</option>
-              <option class="search-result__sorting-item" value="expensive">Сначала дорогие</option>
-              <option class="search-result__sorting-item" value="popular">Сначала популярные</option>
-            </select>
-            <ul class="search-result__layout-list">
-              <li class="search-result__layout-item search-result__layout-item--current">
-                <a class="search-result__layout-link" href="catalog.html?view=tile">
-                  <span class="visually-hidden">Представить в виде сетки</span>
-                </a>
-              </li>
-              <li class="search-result__layout-item">
-                <a class="search-result__layout-link" href="catalog.html?view=card">
-                  <span class="visually-hidden">Представить в виде карточки</span>
-                </a>
-              </li>
-              <li class="search-result__layout-item">
-                <a class="search-result__layout-link" href="catalog.html?view=list">
-                  <span class="visually-hidden">Представить в виде списка</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <select class="search-result__sorting-type" name="sorting-search-result" aria-label="Сортировка результатов">
+            <option class="search-result__sorting-item" value="inexpensive">Сначала дешевые</option>
+            <option class="search-result__sorting-item" value="expensive">Сначала дорогие</option>
+            <option class="search-result__sorting-item" value="popular">Сначала популярные</option>
+          </select>
+          <ul class="search-result__layout-list">
+            <li class="search-result__layout-item search-result__layout-item--current">
+              <a class="search-result__layout-link" href="catalog.html?view=tile">
+                <span class="visually-hidden">Представить в виде сетки</span>
+              </a>
+            </li>
+            <li class="search-result__layout-item">
+              <a class="search-result__layout-link" href="catalog.html?view=card">
+                <span class="visually-hidden">Представить в виде карточки</span>
+              </a>
+            </li>
+            <li class="search-result__layout-item">
+              <a class="search-result__layout-link" href="catalog.html?view=list">
+                <span class="visually-hidden">Представить в виде списка</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="hotels search-result__hotels-list">
           <li class="hotel-card hotels__item">
@@ -156,7 +155,7 @@
               <span class="visually-hidden">4 звезды</span>
             </span>
             <p class="hotel-card__rating">
-              Рейтинг:<span class="hotel-card__rating-value">8,5</span>
+              Рейтинг: <span class="hotel-card__rating-value">8,5</span>
             </p>
           </li>
           <li class="hotel-card hotels__item">
@@ -170,7 +169,7 @@
               <span class="visually-hidden">4 звезды</span>
             </span>
             <p class="hotel-card__rating">
-              Рейтинг:<span class="hotel-card__rating-value">9,2</span>
+              Рейтинг: <span class="hotel-card__rating-value">9,2</span>
             </p>
           </li>
           <li class="hotel-card hotels__item">
@@ -184,7 +183,7 @@
               <span class="visually-hidden">3 звезды</span>
             </span>
             <p class="hotel-card__rating">
-              Рейтинг:<span class="hotel-card__rating-value">6,9</span>
+              Рейтинг: <span class="hotel-card__rating-value">6,9</span>
             </p>
           </li>
           <li class="hotel-card hotels__item">
@@ -198,7 +197,7 @@
               <span class="visually-hidden">2 звезды</span>
             </span>
             <p class="hotel-card__rating">
-              Рейтинг:<span class="hotel-card__rating-value">5</span>
+              Рейтинг: <span class="hotel-card__rating-value">5</span>
             </p>
           </li>
         </ul>
@@ -226,7 +225,7 @@
     </main>
     <footer class="footer page__footer">
       <section class="subscription footer__subscription">
-        <h2 class="subscription__title">
+        <h2 class="section-title subscription__title">
           Подпишитесь на рассылку
         </h2>
         <p class="subscription__subtitle">
@@ -267,5 +266,6 @@
         </a>
       </section>
     </footer>
+    </div>
   </body>
 </html>
