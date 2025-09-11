@@ -49,6 +49,11 @@ body {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+.pahe__header {
+  position: relative;
+  z-index: 1;
+}
 .page__main {
   flex-grow: 1;
 }
