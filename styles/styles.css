@@ -1894,10 +1894,11 @@ body {
 }
 
 .modal__input-wrapper {
+  width: 110px;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 110px;
 }
 
 .modal__guest-input {

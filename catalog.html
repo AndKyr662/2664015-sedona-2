@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="page">
-    <header data-test="header" class="header page__header">
+    <header class="header page__header">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
       </a>
@@ -42,7 +42,7 @@
       </nav>
       <a class="button navigation__user-button" href="#">Хочу сюда!</a>
     </header>
-    <main data-test="main" class="catalog page__catalog">
+    <main class="catalog page__catalog">
       <div class="catalog__wrapper">
         <h1 class="catalog__title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs catalog__breadcrumbs">
@@ -57,7 +57,7 @@
             </a>
           </li>
         </ul>
-        <form data-test="filter" class="search-form catalog__search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="search-form catalog__search-form" action="https://echo.htmlacademy.ru/" method="get">
           <h2 class="visually-hidden">Форма поиска гостиницы</h2>
           <div class="search-form__fieldsets-wrapper">
             <fieldset class="search-form__comfort search-form__fieldset">
@@ -102,11 +102,11 @@
               <legend class="search-form__fieldset-title">Стоимость, ₽:</legend>
               <div class="search-form__range-inputs">
                 <label class="search-form__range-label" for="search-form-min-price">
-                  <input class="search-form__range-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000" aria-label="Минимальная стоимость жилья">
+                  <input class="search-form__range-input" id="search-form-min-price" type="number" name="housing-min-price" value="0" min="0" max="9000" aria-label="Минимальная стоимость жилья" required>
                   <span class="search-form__range-text">от</span>
                 </label>
                 <label class="search-form__range-label" for="search-form-max-price">
-                  <input class="search-form__range-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000" aria-label="Максимальная стоимость жилья">
+                  <input class="search-form__range-input" id="search-form-max-price" type="number" name="housing-max-price" value="9000" min="0" max="9000" aria-label="Максимальная стоимость жилья" required>
                   <span class="search-form__range-text">до</span>
                 </label>
               </div>
@@ -134,7 +134,7 @@
           </div>
         </form>
       </div>
-      <div data-test="catalog" class="search-result catalog__search-result">
+      <div class="search-result catalog__search-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="search-result__filters">
           <p class="search-result__title">
@@ -267,7 +267,7 @@
       </div>
     </main>
     <footer class="footer page__footer">
-      <section data-test="subscribe" class="subscription footer__subscription">
+      <section class="subscription footer__subscription">
         <h2 class="section-title subscription__title">
           Подпишитесь на рассылку
         </h2>
@@ -277,11 +277,11 @@
         </p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-form-email">Ваша электронная почта</label>
-          <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button subscription__submit-email button--big button--blue" type="submit">Подписаться</button>
         </form>
       </section>
-      <section data-test="footer" class="contacts footer__contacts">
+      <section class="contacts footer__contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <ul class="contacts__socials">
           <li class="contacts__socials-item">

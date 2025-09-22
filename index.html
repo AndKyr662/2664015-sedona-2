@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="page">
-    <header data-test="header" class="header page__header">
+    <header class="header page__header">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="images/logo_sedona.svg" width="140" height="70" alt="Логотип Седоны">
       </a>
@@ -42,12 +42,12 @@
       </nav>
       <a class="button navigation__user-button" href="#">Хочу сюда!</a>
     </header>
-    <main data-test="main" class="main page__main">
+    <main class="main page__main">
       <h1 class="visually-hidden">Сайт Седоны</h1>
-      <div data-test="hero" class="hero main__hero">
+      <div class="hero main__hero">
         <img class="hero__image" src="images/img_welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону. Потому что Гранд-Каньон отстой">
       </div>
-      <section data-test="advantages" class="features main__features">
+      <section class="features main__features">
         <h2 class="visually-hidden">
           Особенности города
         </h2>
@@ -118,7 +118,7 @@
           </li>
         </ul>
       </section>
-      <section data-test="service" class="services main__services">
+      <section class="services main__services">
         <h2 class="visually-hidden">Сервис в Седоне</h2>
         <div class="services__title-wrapper">
           <p class="section-title services__title">
@@ -154,7 +154,7 @@
           </li>
         </ul>
       </section>
-      <section data-test="search" class="search-hotel main__search-hotel">
+      <section class="search-hotel main__search-hotel">
         <h2 class="visually-hidden">
           Найти гостиницу
         </h2>
@@ -168,7 +168,7 @@
       </section>
     </main>
     <footer class="footer page__footer">
-      <section data-test="subscribe" class="subscription footer__subscription subscription--background">
+      <section class="subscription footer__subscription subscription--background">
         <h2 class="section-title subscription__title section-title--white">
           Подпишитесь на рассылку
         </h2>
@@ -178,11 +178,11 @@
         </p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-form-email">Ваша электронная почта</label>
-          <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="subscription__email" id="subscription-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button subscription__submit-email button--big button--blue" type="submit">Подписаться</button>
         </form>
       </section>
-      <section data-test="footer" class="contacts footer__contacts">
+      <section class="contacts footer__contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <ul class="contacts__socials">
           <li class="contacts__socials-item">
@@ -231,14 +231,14 @@
             <fieldset class="modal__dates modal__fieldset">
               <label class="modal__date-wrapper" for="modal-check-in-date">
                 <span class="modal__dates-label">Дата Заезда:</span>
-                <input class="modal__input modal__date-input" type="text" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" id="modal-check-in-date">
+                <input class="modal__input modal__date-input" type="text" name="check-in-date" value="27 апреля 2020" placeholder="Укажите дату" id="modal-check-in-date" required>
                 <span class="modal__validation-message modal__validation-message--error">
                   Мы не можем отправить вас в прошлое.
                 </span>
               </label>
               <label class="modal__date-wrapper" for="modal-check-out-date">
                 <span class="modal__dates-label">Дата Выезда:</span>
-                <input class="modal__input modal__date-input" type="text" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату" id="modal-check-out-date">
+                <input class="modal__input modal__date-input" type="text" name="check-out-date" value="1 сентября 2023" placeholder="Укажите дату" id="modal-check-out-date" required>
                 <span class="modal__validation-message">
                   На эти даты есть свободные номера. Пока есть.
                 </span>
@@ -258,7 +258,7 @@
                       </svg>
                     </span>
                   </button>
-                  <input class="modal__input modal__guest-input" type="number" value="2" placeholder="2" name="adults-count" min="0" max="99" id="modal-adults-count">
+                  <input class="modal__input modal__guest-input" type="number" value="2" placeholder="2" name="adults-count" min="0" max="99" id="modal-adults-count" required>
                   <button class="modal__change-number modal__change-number--increase" type="button">
                     <span class="visually-hidden">Увеличить число</span>
                     <span class="modal__button-inner">
@@ -290,7 +290,7 @@
                       </svg>
                     </span>
                   </button>
-                  <input class="modal__input modal__guest-input" type="number" value="2" placeholder="2" name="children-count" min="0" max="99" id="modal-children-count">
+                  <input class="modal__input modal__guest-input" type="number" value="2" placeholder="2" name="children-count" min="0" max="99" id="modal-children-count" required>
                   <button class="modal__change-number modal__change-number--increase" type="button">
                     <span class="visually-hidden">Увеличить число</span>
                     <span class="modal__button-inner">
